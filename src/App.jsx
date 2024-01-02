@@ -47,8 +47,7 @@ function App() {
        option : "Add to Cart"
     }
    ];
-  return (
-    <>
+  return <>
     <Nav cart = {cart} setCart = {setCart}/>
     <section className="py-5">
       <div className="container px-4 px-lg-5 mt-5">
@@ -63,8 +62,9 @@ function App() {
         </div>
       </div>
     </section>
+
     </>
-  )
+  
 }
 
 export default App

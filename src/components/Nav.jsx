@@ -1,6 +1,9 @@
 import React from 'react';
 
 function Nav({cart,setCart}) {
+    let handleCart = ()=>{
+        window.location.reload();
+    }
   return <>
   
 <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -22,7 +25,8 @@ function Nav({cart,setCart}) {
             </li>
         </ul>
         <form className="d-flex">
-            <button className="btn btn-outline-dark" onClick={()=>setCart(0)}>
+            <button className="btn btn-outline-dark" onClick={()=>{setCart(0)
+                                                                   handleCart()}}>
                 <i className="bi-cart-fill me-1"></i>
                 Cart
                 <span className="badge bg-dark text-white ms-1 rounded-pill">{cart}</span>
